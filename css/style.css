@@ -10,9 +10,28 @@
 }
 
 .slideshow-container .mySlides img {
-  max-width: 100%;
-  max-height: 99vh;
+  /* vertical and horizontal aligh */
+  max-height: 90%;
+  max-width: 90%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   margin: auto;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+
+@media screen and (max-width: 800px) {
+  .nav-button {
+    display: none;
+  }
 }
 
 /* Hide the images by default */
@@ -21,7 +40,8 @@
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -29,6 +49,13 @@
   mix-blend-mode: multiply;
   font-size: 3vw;
   transition: 0.4s ease;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
 }
 
 /* Position the "next button" to the right */
@@ -36,11 +63,12 @@
   right: 0;
 }
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   font-size: 4vw;
 }
 
-/* Fading animation */
+/* Fading animation start*/
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -49,11 +77,20 @@
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
+/* Fading animation end*/
