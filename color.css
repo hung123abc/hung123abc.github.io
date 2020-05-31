@@ -1,1 +1,1 @@
-body{font-family:monospace}h3{font-size:3vw}p{font-size:1vw}.fa,footer{text-align:center}.fa{font-size:calc(1vw + 1vh + 2vmin);text-decoration:none;color:#000;opacity:.7;padding:0 1vh;cursor:pointer}.fa:hover{opacity:.3}footer{margin:2vh 0 6vh;left:0;bottom:0;width:100%}
+body{font-family:monospace}h3{font-size:calc(2vw + 2vh)}p{font-size:calc(1vw + 1vh)}.fa,footer{text-align:center}.fa{font-size:calc(1vw + 1vh + 2vmin);text-decoration:none;color:#000;opacity:.7;padding:0 1vh;cursor:pointer}.fa:hover{opacity:.3}footer{margin:2vh 0 6vh;left:0;bottom:0;width:100%}
